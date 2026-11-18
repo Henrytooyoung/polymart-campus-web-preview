@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="zh-Hans">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#902438">
+<meta name="referrer" content="no-referrer">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self'; connect-src 'none'; form-action 'none'; base-uri 'none'">
+<title>学校邮箱注册 · PolyMart</title>
+<link rel="icon" href="assets/brand/favicon-handover.svg"><link rel="stylesheet" href="signup.css">
+<script defer src="signup.js"></script>
+</head>
+<body>
+<header><div class="nav"><a href="./" aria-label="PolyMart"><img src="assets/brand/polymart-logo.webp" alt="PolyMart" width="132" height="44"></a>
+<select id="lang" aria-label="语言 / Language"><option value="s">简中</option><option value="t">繁中</option><option value="e">English</option></select></div></header>
+<main><a class="back" href="./" data-t="back">← 返回集市</a>
+<section><p class="step" data-t="step">注册 · 第 1 步，共 2 步</p>
+<h1 data-t="title">验证学校邮箱</h1><p class="intro" data-t="intro">学生和教职工均可使用本人学校邮箱注册。</p>
+<aside data-t="notice">这是公开体验页，请使用示例用户名。这里不会保存邮箱、发送邮件或创建账号。</aside>
+<label for="school" data-t="school">选择学校</label><select id="school"><option value="">请选择学校</option></select>
+<div class="pair"><div><label for="user" data-t="user">邮箱用户名</label><input id="user" placeholder="例如 campus-demo" type="text" inputmode="email" maxlength="254" autocomplete="off" autocapitalize="off" spellcheck="false" disabled aria-describedby="help message"></div>
+<div><label for="domain" data-t="domain">邮箱后缀</label><select id="domain" disabled><option value="">请先选择学校</option></select></div></div>
+<p class="help" id="help" data-t="help">也可以粘贴完整的示例邮箱，自动匹配所选学校的后缀。</p>
+<button type="button" id="sample" disabled data-t="sample">使用示例用户名</button>
+<p id="message" role="status" aria-live="polite"></p>
+<noscript>请启用 JavaScript 查看各校邮箱后缀。</noscript>
+</section></main></body></html>
